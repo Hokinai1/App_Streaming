@@ -14,28 +14,21 @@ class _HomeAppState extends State<HomeApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // title: Text("Vos émissions en streaming"),
-
-        // actions: [
-        //   IconButton(icon: Icon(Icons.search), onPressed: () {}),
-        //   title: Text("Vos émissions en streaming"),
-        //   IconButton(icon: Icon(Icons.list), onPressed: () {}),
-        // ],
         leading: IconButton(
-          icon: const Icon(Icons.menu),
+          icon: const Icon(Icons.search),
           onPressed: () {},
           color: Colors.white,
         ),
         title: Text(
           'Vos émissions en streaming',
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
         backgroundColor: const Color.fromARGB(255, 9, 150, 168),
 
         actions: [
           IconButton(
-            icon: const Icon(Icons.search),
+            icon: const Icon(Icons.menu),
             onPressed: () {},
             color: Colors.white,
           ),
